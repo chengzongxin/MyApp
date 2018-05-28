@@ -66,6 +66,7 @@
 		969CBDDE20BBECF500AA3DF6 /* MyAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		969CBDE220BBECF500AA3DF6 /* MyAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyAppTests.m; sourceTree = "<group>"; };
 		969CBDE420BBECF500AA3DF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96BCDB6A20BC222400F851D8 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		96DE39FB20BBEFE7009DE78D /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		96DE39FC20BBEFE7009DE78D /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		96DE3A0820BBF2D7009DE78D /* NavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationController.h; sourceTree = "<group>"; };
@@ -90,7 +91,6 @@
 		96DE3A4320BBFB1C009DE78D /* OrderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrderViewController.m; sourceTree = "<group>"; };
 		96DE3A4520BBFB25009DE78D /* ProfileViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
 		96DE3A4620BBFB25009DE78D /* ProfileViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
-		96DE3A4920BBFC2E009DE78D /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		96DE3A4A20BBFD93009DE78D /* NSString+Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Color.h"; sourceTree = "<group>"; };
 		96DE3A4B20BBFD93009DE78D /* NSString+Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Color.m"; sourceTree = "<group>"; };
 		96DE3A4D20BBFF57009DE78D /* Message.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Message.storyboard; sourceTree = "<group>"; };
@@ -192,7 +192,6 @@
 			isa = PBXGroup;
 			children = (
 				96DE39FA20BBEFE7009DE78D /* AppDelegate */,
-				96DE39FE20BBEFE7009DE78D /* Resources */,
 				96DE3A0020BBEFE7009DE78D /* Define */,
 				96DE39FD20BBEFE7009DE78D /* Extension */,
 				96DE39FF20BBEFE7009DE78D /* Utils */,
@@ -247,14 +246,6 @@
 				96DE3A8120BC153C009DE78D /* UIColor+Extension.m */,
 			);
 			path = Extension;
-			sourceTree = "<group>";
-		};
-		96DE39FE20BBEFE7009DE78D /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				96DE3A4920BBFC2E009DE78D /* PrefixHeader.pch */,
-			);
-			path = Resources;
 			sourceTree = "<group>";
 		};
 		96DE39FF20BBEFE7009DE78D /* Utils */ = {
@@ -365,6 +356,7 @@
 		96DE3A5920BC07CD009DE78D /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
+				96BCDB6A20BC222400F851D8 /* PrefixHeader.pch */,
 				96DE3A5A20BC080E009DE78D /* Assets.xcassets */,
 				96DE3A5C20BC080E009DE78D /* Base.lproj */,
 				96DE3A5D20BC080E009DE78D /* Info.plist */,
@@ -824,7 +816,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT)/Resources/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT)/SupportingFiles/PrefixHeader.pch";
 				INFOPLIST_FILE = MyApp/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.silknets.MyApp;
@@ -839,7 +831,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT)/Resources/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT)/SupportingFiles/PrefixHeader.pch";
 				INFOPLIST_FILE = MyApp/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.silknets.MyApp;
