@@ -219,7 +219,6 @@
 				96DE3A0220BBF2AA009DE78D /* Publish */,
 				96DE3A0620BBF2AA009DE78D /* Order */,
 				96DE3A0720BBF2AA009DE78D /* Profile */,
-				96DE3A1120BBF2F5009DE78D /* Login */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -331,13 +330,6 @@
 			path = Profile;
 			sourceTree = "<group>";
 		};
-		96DE3A1120BBF2F5009DE78D /* Login */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Login;
-			sourceTree = "<group>";
-		};
 		96DE3A1820BBF4CB009DE78D /* BaseClasses */ = {
 			isa = PBXGroup;
 			children = (
@@ -358,18 +350,10 @@
 			children = (
 				96BCDB6A20BC222400F851D8 /* PrefixHeader.pch */,
 				96DE3A5A20BC080E009DE78D /* Assets.xcassets */,
-				96DE3A5C20BC080E009DE78D /* Base.lproj */,
 				96DE3A5D20BC080E009DE78D /* Info.plist */,
 				96DE3A5B20BC080E009DE78D /* main.m */,
 			);
 			path = SupportingFiles;
-			sourceTree = "<group>";
-		};
-		96DE3A5C20BC080E009DE78D /* Base.lproj */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Base.lproj;
 			sourceTree = "<group>";
 		};
 		96DE3A6720BC138E009DE78D /* Network */ = {
